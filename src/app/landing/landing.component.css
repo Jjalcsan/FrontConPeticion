@@ -1,0 +1,46 @@
+.container{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    width: 100vw;
+    max-width: fit-content;
+    overflow: hidden;
+}
+
+#background{
+    height: 95.8vh;
+    width: 45vw;
+    background-color: #660099;
+}
+
+#selector{
+    background-color:  #282524;
+    height: 95.8vh;
+    width: 55vw;
+    padding-left: 1vw;
+}
+
+button{
+    width: 25vw;
+    border-radius: 12px;
+    border: solid 0.2vw #660099;
+    color: #660099;
+    font-size:large;    
+}
+
+#opciones{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin-top: 20vh;
+    color: #660099;
+    font-size: 3vh;
+}
+
+#terminos{
+    font-size:small;
+}
+
+#logo{
+    font-size: 5vh;
+}
