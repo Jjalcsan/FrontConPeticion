@@ -1,0 +1,29 @@
+.container{
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    margin-right: 1%;
+}
+
+#background{
+    margin: 0%;
+    height: 100vh;
+    background-color: black;
+}
+
+button{
+    width: 25vw;
+    border-radius: 12px;
+    border: solid 0.1vw black;
+}
+
+#opciones{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin-top: 20vh;
+}
+
+#terminos{
+    font-size:xx-small;
+}
