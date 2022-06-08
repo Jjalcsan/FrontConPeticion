@@ -5,17 +5,18 @@
     width: 100vw;
     max-width: fit-content;
     overflow: hidden;
+    font-size: medium;
 }
 
 #background{
-    height: 95.8vh;
+    height: 100vh;
     width: 45vw;
-    background-color: #660099;
+    background-color: #CC33CC;
 }
 
 #selector{
     background-color:  #282524;
-    height: 95.8vh;
+    height: 100vh;
     width: 55vw;
     padding-left: 1vw;
 }
@@ -23,8 +24,8 @@
 button{
     width: 25vw;
     border-radius: 12px;
-    border: solid 0.2vw #660099;
-    color: #660099;
+    border: solid 0.2vw #CC33CC;
+    color: #CC33CC;
     font-size:large;    
 }
 
@@ -33,7 +34,7 @@ button{
     flex-direction: column;
     width: 25vw;
     margin-top: 20vh;
-    color: #660099;
+    color: #CC33CC;
     font-size: 3vh;
 }
 
@@ -43,4 +44,15 @@ button{
 
 #logo{
     font-size: 5vh;
+}
+
+img{
+    height: 100vh;
+    width: 45vw;
+}
+
+button:hover{
+    border: solid 0.2vw #CC66CC;
+    color: #282524;
+    background-color: #CC66CC;
 }
