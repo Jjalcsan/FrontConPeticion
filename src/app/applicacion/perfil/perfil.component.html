@@ -1,0 +1,77 @@
+<div id="containerTopBar">
+  <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand"><p class="linkls" id="titulo">SocialNet</p></a>
+      <div class="" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="/inicio"><p class="linkls">Inicio</p></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/inicio/perfil"><p class="linkls" style="color: #CC66CC;"><b>Perfil</b></p></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/inicio/seguidores"><p class="linkls">Usuarios</p></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/inicio/albumes"><p class="linkls">Albumes</p></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/inicio/grupos"><p class="linkls">Grupos</p></a>
+          </li>
+          
+          <li class="nav-item active">
+            <a class="nav-link" href=""><p class="linkls">Cerrar sesión</p></a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+</div>
+
+<div id="container">
+    <div id="content">
+      <div id="form">
+
+        <h2>Aqui puedes cambiar los datos de tu perfil</h2>
+        <img src="../../../assets/img/pfp.jpg" style="    width: 7vw;height: 7vw;">
+        <input type="file" id="form2Example1" class="form-control"/>
+        <label class="form-label" for="form2Example2">Foto de perfil</label>
+
+      <div class="form-outline mb-4" style="padding-top: 3vh;">
+        <input type="text" id="form2Example1" class="form-control" placeholder="jjalcsan" />
+        <label class="form-label" for="form2Example1">Nick</label>
+      </div>
+    
+      <div class="form-outline mb-4">
+        <input type="password" id="form2Example2" class="form-control"/>
+        <label class="form-label" for="form2Example2">Contraseña</label>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="password" id="form2Example2" class="form-control" />
+        <label class="form-label" for="form2Example2">Repite la contraseña</label>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="email" id="form2Example2" class="form-control" placeholder="jjalcsan@gmail.com"/>
+        <label class="form-label" for="form2Example2">Email</label>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="text" id="form2Example2" class="form-control" placeholder="25"/>
+        <label class="form-label" for="form2Example2">Edad</label>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="text" id="form2Example2" class="form-control" placeholder="123456789"/>
+        <label class="form-label" for="form2Example2">Teléfono</label>
+      </div>
+    
+      <button type="button" class="btn btn-block mb-4" (click)="navigateToInicio()">Guardar cambios</button>
+    </div>
+    </div>
+  </div>

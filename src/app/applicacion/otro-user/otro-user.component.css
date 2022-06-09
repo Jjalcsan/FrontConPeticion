@@ -1,0 +1,133 @@
+#container{
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: #282524;
+    color: #CC66CC;
+    height: 95vh;
+}
+
+#perfil, #posts, #externo{
+    border: 1px solid #CC33CC;;
+    border-radius: 1%;
+    height: 50vh;
+    padding-top: 1vh;
+}
+
+#perfil, #externo{
+    width: 25vw;
+    padding-left: 1vw;
+    padding-right: 2vw;
+}
+
+#posts{
+    width: 45vw;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#externo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1vh;
+    height: 55vh;
+}
+
+#seguidores, #grupos, #albumes{
+    padding-left: 1vw;
+    border: 1px solid #CC33CC;;
+    border-radius: 1%;  
+}
+
+button{
+    border-radius: 12px;
+    border: solid 0.2vw #CC33CC;
+    color: #CC33CC;
+    font-size:large; 
+    margin-top: 2vh;
+}
+
+button:hover{
+    border: solid 0.2vw #CC66CC;
+    color: #282524;
+    background-color: #CC66CC;
+}
+
+a{
+    color: #CC66CC;
+}
+
+input{
+    border: #CC33CC 0.1vw solid;
+    background-color: #282524;
+    color: #CC33CC;
+    height: 20vh;
+    width: 40vw;
+    border-radius: 1%;
+}
+
+input:focus{
+    border: #CC33CC 0.1vw solid;
+    color: #CC66CC;
+}
+
+#perfil{
+    height: 60vh;
+    font-size: large;
+    color: #CC66CC;
+}
+
+.post{
+    margin-top: 2vh;
+    padding: 1vh;
+    border: #CC33CC 0.1vw solid;
+    background-color: #282524;
+    color: #CC66CC;
+    width: 40vw;
+    height: 15vh;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fecha{
+    display: flex;
+    justify-content: flex-end;
+}
+
+img{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    margin-left: 0.4vw;
+}
+
+.mas{
+    padding-left: 1vh;
+    padding-bottom: 1vh;
+}
+
+#containerTopBar{
+    background-color:  #282524;
+    padding-left: 1vw;
+    border-bottom: #CC33CC 0.1vh solid;
+}
+
+.linkls{
+    color: #CC33CC;
+    font-size: large;
+}
+
+#navbarSupportedContent{
+    background-color:  #282524;
+}
+
+#titulo{
+    font-size: xx-large;
+}

@@ -4,7 +4,7 @@
     justify-content: space-around;
     background-color: #282524;
     color: #CC66CC;
-    height: 91vh;
+    height: 94vh;
 }
 
 #perfil, #posts, #externo{
@@ -111,4 +111,23 @@ img{
 .mas{
     padding-left: 1vh;
     padding-bottom: 1vh;
+}
+
+#containerTopBar{
+    background-color:  #282524;
+    padding-left: 1vw;
+    border-bottom: #CC33CC 0.1vh solid;
+}
+
+.linkls{
+    color: #CC33CC;
+    font-size: large;
+}
+
+#navbarSupportedContent{
+    background-color:  #282524;
+}
+
+#titulo{
+    font-size: xx-large;
 }
