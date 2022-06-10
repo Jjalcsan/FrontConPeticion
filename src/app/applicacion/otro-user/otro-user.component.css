@@ -84,6 +84,7 @@ input:focus{
 
 .post{
     margin-top: 2vh;
+    font-size: large;
     padding: 1vh;
     border: #CC33CC 0.1vw solid;
     background-color: #282524;

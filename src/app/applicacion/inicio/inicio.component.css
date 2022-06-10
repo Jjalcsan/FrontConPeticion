@@ -23,6 +23,7 @@
 #posts{
     width: 45vw;
     height: 87vh;
+    font-size: large;
     display: flex;
     justify-content: center;
     flex-direction: column;

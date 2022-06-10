@@ -9,6 +9,7 @@ import { SeguidoresComponent } from './applicacion/seguidores/seguidores.compone
 import { GrupoComponent } from './applicacion/grupo/grupo.component';
 import { AlbumComponent } from './applicacion/album/album.component';
 import { PerfilComponent } from './applicacion/perfil/perfil.component';
+import { GruposComponent } from './applicacion/grupos/grupos.component';
 
 const routes: Routes = [
   { path: "", component: LandingComponent, pathMatch: "full"},
@@ -18,7 +19,7 @@ const routes: Routes = [
   { path: "inicio/seguidores", component: SeguidoresComponent, pathMatch: "full"},
   { path: "inicio/otroUsuario", component: OtroUserComponent, pathMatch: "full"},
   { path: "inicio/seguidores/otroUsuario", component: OtroUserComponent, pathMatch: "full"},
-  { path: "inicio/grupos", component: GrupoComponent, pathMatch: "full"},
+  { path: "inicio/grupos", component: GruposComponent, pathMatch: "full"},
   { path: "inicio/grupos/grupo", component: GrupoComponent, pathMatch: "full"},
   { path: "inicio/grupo", component: GrupoComponent, pathMatch: "full"},
   { path: "inicio/albumes", component: AlbumComponent, pathMatch: "full"},
