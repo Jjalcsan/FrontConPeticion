@@ -18,19 +18,18 @@
 }
 
 #container{
-    padding-top: 2vh;
+    padding-top: 1.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #282524;
     color: #CC66CC;
-    height: 94vh;
     font-size: large;
 }
 
 .imagen{
-    height: 17vh;
-    width: 12vw;
+    height: 11vw;
+    width: 11vw;
 }
 
 .divImagen{
@@ -38,15 +37,15 @@
 }
 
 .user{
-    margin-top: 2vh;
+    margin-top: 1.5vw;
     display: flex;
     border: #CC33CC 0.2vw solid;
-    height: 17.6vh;
+    height: 11.5vw;
     width: 50vw;
 }
 
 .caracteristicas{
-    padding: 1vh;
+    padding: 1vw;
 }
 
 button{

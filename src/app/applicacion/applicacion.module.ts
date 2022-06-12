@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InicioComponent } from './inicio/inicio.component';
-import { SharedModule } from '../shared/shared.module';
 import { OtroUserComponent } from './otro-user/otro-user.component';
 import { AlbumComponent } from './album/album.component';
 import { SeguidoresComponent } from './seguidores/seguidores.component';
@@ -24,8 +23,7 @@ import { PerfilComponent } from './perfil/perfil.component';
     PerfilComponent
   ],
   imports: [
-    CommonModule,
-    SharedModule
+    CommonModule
   ],
   exports: [
     InicioComponent,

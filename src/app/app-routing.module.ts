@@ -10,6 +10,7 @@ import { GrupoComponent } from './applicacion/grupo/grupo.component';
 import { AlbumComponent } from './applicacion/album/album.component';
 import { PerfilComponent } from './applicacion/perfil/perfil.component';
 import { GruposComponent } from './applicacion/grupos/grupos.component';
+import { AlbumesComponent } from './applicacion/albumes/albumes.component';
 
 const routes: Routes = [
   { path: "", component: LandingComponent, pathMatch: "full"},
@@ -22,7 +23,7 @@ const routes: Routes = [
   { path: "inicio/grupos", component: GruposComponent, pathMatch: "full"},
   { path: "inicio/grupos/grupo", component: GrupoComponent, pathMatch: "full"},
   { path: "inicio/grupo", component: GrupoComponent, pathMatch: "full"},
-  { path: "inicio/albumes", component: AlbumComponent, pathMatch: "full"},
+  { path: "inicio/albumes", component: AlbumesComponent, pathMatch: "full"},
   { path: "inicio/albumes/album", component: AlbumComponent, pathMatch: "full"},
   { path: "inicio/album", component: AlbumComponent, pathMatch: "full"},
   { path: "inicio/albumes/album/fotos", component: AlbumComponent, pathMatch: "full"},

@@ -1,7 +1,7 @@
 #containerTopBar{
     background-color:  #282524;
     padding-left: 1vw;
-    border-bottom: #CC33CC 0.1vh solid;
+    border-bottom: #CC33CC 0.1vw solid;
 }
 
 .linkls{
@@ -15,4 +15,57 @@
 
 #titulo{
     font-size: xx-large;
+}
+
+#container{
+    padding-top: 1.5vw;
+    color: #CC66CC;
+    font-size: large;
+    display: flex;
+}
+
+img{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    margin-left: 0.4vw;
+}
+
+#grupoImg{
+    height: 11vw;
+    width: 11vw;
+    margin-bottom: 1.5vw;
+}
+
+#grupo{
+    margin-left: 1vw;
+    width: 25vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #CC33CC 0.2vw solid;
+    border-radius: 2%;
+}
+
+#descripcion{
+    width: 60vw;
+    margin-left: 5vw;
+    padding: 2vw;
+    border: #CC33CC 0.2vw solid;
+    border-radius: 2%;
+}
+
+button{
+    border-radius: 12px;
+    border: solid 0.2vw #CC33CC;
+    color: #CC33CC;
+    font-size:large; 
+    margin-top: 1.5vw;
+}
+
+button:hover{
+    border: solid 0.2vw #CC66CC;
+    color: #282524;
+    background-color: #CC66CC;
 }

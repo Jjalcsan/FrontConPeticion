@@ -1,7 +1,7 @@
 #containerTopBar{
     background-color:  #282524;
     padding-left: 1vw;
-    border-bottom: #CC33CC 0.1vh solid;
+    border-bottom: #CC33CC 0.1vw solid;
 }
 
 .linkls{
@@ -14,5 +14,31 @@
 }
 
 #titulo{
+    font-size: xx-large;
+}
+
+img{
+    width: 20vw;
+    height: 20vw;
+}
+
+.col-sm{
+    padding-top: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    color: #CC33CC;
+}
+
+#albumName{
+    display: flex;
+    justify-content: center;
+    padding-top: 2vw;
+    
+}
+
+h2{
     font-size: xx-large;
 }

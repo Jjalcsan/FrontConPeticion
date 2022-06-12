@@ -1,7 +1,7 @@
 #containerTopBar{
     background-color:  #282524;
     padding-left: 1vw;
-    border-bottom: #CC33CC 0.1vh solid;
+    border-bottom: #CC33CC 0.1vw solid;
 }
 
 .linkls{
@@ -15,4 +15,29 @@
 
 #titulo{
     font-size: xx-large;
+}
+
+#container{
+    padding-top: 2vw;
+}
+
+.card{
+    color: #CC33CC;
+    background-color:  #282524;
+    border: #CC33CC 0.1vw solid;
+    height: 50vh;
+}
+
+button{
+    border-radius: 0.5vw;
+    border: solid 0.2vw #CC33CC;
+    color: #CC33CC;
+    font-size:large; 
+    margin: 1vw;
+}
+
+button:hover{
+    border: solid 0.2vw #CC66CC;
+    color: #282524;
+    background-color: #CC66CC;
 }

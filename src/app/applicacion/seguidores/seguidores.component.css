@@ -1,36 +1,17 @@
-#containerTopBar{
-    background-color:  #282524;
-    padding-left: 1vw;
-    border-bottom: #CC33CC 0.1vh solid;
-}
-
-.linkls{
-    color: #CC33CC;
-    font-size: large;
-}
-
-#navbarSupportedContent{
-    background-color:  #282524;
-}
-
-#titulo{
-    font-size: xx-large;
-}
-
 #container{
-    padding-top: 2vh;
+    padding-top: 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #282524;
     color: #CC66CC;
-    height: 94vh;
+    padding-bottom: 1vw;
     font-size: large;
 }
 
 .imagen{
-    height: 17vh;
-    width: 12vw;
+    height: 9vw;
+    width: 9vw;
 }
 
 .divImagen{
@@ -38,15 +19,15 @@
 }
 
 .user{
-    margin-top: 2vh;
+    margin-top: 1vw;
     display: flex;
     border: #CC33CC 0.2vw solid;
-    height: 17.6vh;
+    height: 9.45vw;
     width: 40vw;
 }
 
 .caracteristicas{
-    padding: 1vh;
+    padding: 1vw;
 }
 
 button{

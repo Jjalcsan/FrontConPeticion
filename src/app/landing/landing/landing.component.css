@@ -3,20 +3,20 @@
     padding: 0%;
     display: flex;
     width: 100vw;
+    height: 100%;
     max-width: fit-content;
     overflow: hidden;
     font-size: medium;
+    overflow-y: hidden;
 }
 
 #background{
-    height: 100vh;
     width: 45vw;
     background-color: #CC33CC;
 }
 
 #selector{
     background-color:  #282524;
-    height: 100vh;
     width: 55vw;
     padding-left: 1vw;
 }
@@ -33,7 +33,7 @@ button{
     display: flex;
     flex-direction: column;
     width: 25vw;
-    margin-top: 20vh;
+    margin-top: 13vw;
     color: #CC33CC;
     font-size: 3vh;
 }
@@ -47,7 +47,7 @@ button{
 }
 
 img{
-    height: 100vh;
+    height: 100%;
     width: 45vw;
 }
 
@@ -55,4 +55,34 @@ button:hover{
     border: solid 0.2vw #CC66CC;
     color: #282524;
     background-color: #CC66CC;
+}
+
+@media only screen and (max-width: 900px) {
+    #background{
+        width: 0vw;
+    }
+
+    #selector{
+        width: 100vw;
+    }
+
+    #opciones{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+    }
+
+    button{
+        width: 50vw;
+        border-radius: 12px;
+        border: solid 0.2vw #CC33CC;
+        color: #CC33CC;
+        font-size:large;    
+    }
+
+    #terminos{
+        padding-top: 2vw;
+        font-size:medium;
+    }
 }

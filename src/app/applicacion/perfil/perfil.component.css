@@ -1,11 +1,11 @@
 #container{
-    height: 110vh;
-    padding-top: 10vh;
+    padding-top: 5vw;
     display: flex;
     justify-content: center;
     color: #CC66CC;
     font-size: medium;
     background-image: url("../../../assets/img/fondoLoginRegister.jpg");
+    padding-bottom: 5vw;
 }
 
 #content{
@@ -13,10 +13,9 @@
     display: flex;
     flex-direction: column;
     width: 50vw;
-    height: 95vh;
     border: 0.1vw solid #CC33CC;
     border-radius: 1%;
-    padding-top: 2vh;
+    padding-top: 1vw;
     padding-left: 2vw;
 }
 

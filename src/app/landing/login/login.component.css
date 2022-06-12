@@ -1,6 +1,6 @@
 #container{
-    height: 100vh;
-    padding-top: 10vh;
+    height: 100%;
+    padding-top: 7vw;
     display: flex;
     justify-content: center;
     color: #CC66CC;
@@ -13,10 +13,10 @@
     display: flex;
     flex-direction: column;
     width: 50vw;
-    height: 50vh;
+    height: 50%;
     border: 0.1vw solid #CC33CC;
     border-radius: 1%;
-    padding-top: 2vh;
+    padding-top: 1vw;
     padding-left: 2vw;
 }
 
@@ -43,4 +43,26 @@ a{
 
 input{
     border: #CC33CC 0.1vw solid;
+}
+
+@media only screen and (max-width: 900px) {
+
+    button{
+        width: 50vw;
+        border-radius: 12px;
+        border: solid 0.2vw #CC33CC;
+        color: #CC33CC;
+        font-size:x-large;    
+    }
+
+    #content, #container{
+        border: 0vw;
+        width: 100%;
+        height: 100%;
+        padding-top: 0vw;
+    }
+    #form{
+        padding-top: 5vw;
+        width: 80vw;
+    }
 }
