@@ -2,29 +2,49 @@
     <div id="content">
       <div id="form">
   
-      <div class="form-outline mb-4">
-        <input type="text" id="form2Example1" class="form-control" />
+      <div class="form-outline mb-4" [formGroup]="angForm" novalidate>
+        <input type="text" id="form2Example1" class="form-control" formControlName="nick"/>
         <label class="form-label" for="form2Example1">Nick*</label>
+        <div *ngIf="angForm.controls['nick'].invalid && (angForm.controls['nick'].dirty || angForm.controls['nick'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['nick'].errors?.['required']">
+          El nick es necesario.
+        </div>
       </div>
     
       <div class="form-outline mb-4">
-        <input type="password" id="form2Example2" class="form-control" />
+        <input type="password" id="form2Example2" class="form-control" formControlName="contra" />
         <label class="form-label" for="form2Example2">Contraseña*</label>
+        <div *ngIf="angForm.controls['contra'].invalid && (angForm.controls['contra'].dirty || angForm.controls['contra'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['contra'].errors?.['required']">
+          La contraseña es necesaria.
+        </div>
       </div>
 
       <div class="form-outline mb-4">
-        <input type="password" id="form2Example2" class="form-control" />
+        <input type="password" id="form2Example2" class="form-control" formControlName="contraAgain"/>
         <label class="form-label" for="form2Example2">Repite la contraseña*</label>
+        <div *ngIf="angForm.controls['contraAgain'].invalid && (angForm.controls['contraAgain'].dirty || angForm.controls['contraAgain'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['contraAgain'].errors?.['required']">
+          Tienes que repetir la contraseña.
+        </div>
       </div>
 
       <div class="form-outline mb-4">
-        <input type="email" id="form2Example2" class="form-control" />
+        <input type="email" id="form2Example2" class="form-control" formControlName="email"/>
         <label class="form-label" for="form2Example2">Email*</label>
+        <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['email'].errors?.['required']">
+          El email es necesario.
+        </div>
       </div>
 
       <div class="form-outline mb-4">
-        <input type="text" id="form2Example2" class="form-control" />
+        <input type="text" id="form2Example2" class="form-control" formControlName="edad"/>
         <label class="form-label" for="form2Example2">Edad*</label>
+        <div *ngIf="angForm.controls['edad'].invalid && (angForm.controls['edad'].dirty || angForm.controls['edad'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['edad'].errors?.['required']">
+          Tienes que ser mayor de 18.
+        </div>
       </div>
 
       <div class="form-outline mb-4">
@@ -32,7 +52,7 @@
         <label class="form-label" for="form2Example2">Teléfono</label>
       </div>
     
-      <button type="button" class="btn btn-block mb-4" (click)="navigateToInicio()">Registrarse</button>
+      <button type="button" class="btn btn-block mb-4" (click)="navigateToInicio()" [disabled]="angForm.pristine || angForm.invalid">Registrarse</button>
     
       <div>
         <p>¿Ya tienes cuenta? <a href="landing/login"><b>Inicia sesión</b></a></p>

@@ -1,7 +1,8 @@
 #container{
     padding-top: 5vw;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: #CC66CC;
     font-size: medium;
     background-image: url("../../../assets/img/fondoLoginRegister.jpg");
@@ -21,6 +22,10 @@
 
 #form{
     width: 40vw;
+}
+
+#externo{
+    height: 0vh;
 }
 
 button{
@@ -68,4 +73,41 @@ img{
 
 #titulo{
     font-size: xx-large;
+}
+
+#externo{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+    #container{
+        width: 100%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        display: flex;
+    }
+    #content{
+        width: 100%;
+    }
+    #form{
+        width: 90%;
+    }
+    #externo{
+        visibility: visible;
+        background-color: #282524;
+        width: 100%;
+    }
+    #grupos,#albumes,#seguidores{
+        padding-top: 2%;
+    }
+    img{
+        width: 15%;
+        height: 15%;
+        padding: 1%;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

@@ -2,14 +2,22 @@
   <div id="content">
     <div id="form">
 
-    <div class="form-outline mb-4">
-      <input type="email" id="form2Example1" class="form-control" />
-      <label class="form-label" for="form2Example1">Correo</label>
+    <div class="form-outline mb-4" [formGroup]="angForm" novalidate>
+      <input type="email" id="form2Example1" class="form-control" formControlName="correo"/>
+      <label class="form-label" for="form2Example1">Correo*</label>
+      <div *ngIf="angForm.controls['correo'].invalid && (angForm.controls['correo'].dirty || angForm.controls['correo'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['correo'].errors?.['required']">
+        El correo es necesario.
+      </div>
     </div>
   
     <div class="form-outline mb-4">
-      <input type="password" id="form2Example2" class="form-control" />
-      <label class="form-label" for="form2Example2">Contraseña</label>
+      <input type="password" id="form2Example2" class="form-control" formControlName="contra" />
+      <label class="form-label" for="form2Example2">Contraseña*</label>
+      <div *ngIf="angForm.controls['contra'].invalid && (angForm.controls['contra'].dirty || angForm.controls['contra'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['contra'].errors?.['required']">
+        La contraseña es necesario.
+      </div>
     </div>
   
     <div class="row mb-4">
@@ -18,7 +26,7 @@
       </div>
     </div>
   
-    <button type="button" class="btn btn-block mb-4" (click)="navigateToInicio()">Inicia sesión</button>
+    <button type="button" class="btn btn-block mb-4" (click)="navigateToInicio()" [disabled]="angForm.pristine || angForm.invalid">Inicia sesión</button>
   
     <div>
       <p>¿No eres miembro? <a href="landing/register"><b>Regístrate</b></a></p>

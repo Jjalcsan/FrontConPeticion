@@ -10,7 +10,7 @@
 }
 
 .imagen{
-    height: 9vw;
+    height: 99%;
     width: 9vw;
 }
 
@@ -22,7 +22,7 @@
     margin-top: 1vw;
     display: flex;
     border: #CC33CC 0.2vw solid;
-    height: 9.45vw;
+    height: 20%;
     width: 40vw;
 }
 
@@ -56,4 +56,22 @@ button{
     border: solid 0.2vw #CC66CC;
     color: #282524;
     background-color: #CC66CC;
+}
+
+@media only screen and (max-width: 900px) {
+    .user{
+        width: 80%;
+        height: 40%;
+    }
+    .divImagen{
+        width: 30%;
+    }
+    .imagen{
+        width: 100%;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

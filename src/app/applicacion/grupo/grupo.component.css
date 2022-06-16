@@ -69,3 +69,38 @@ button:hover{
     color: #282524;
     background-color: #CC66CC;
 }
+
+@media only screen and (max-width: 900px) {
+    #container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #grupo{
+        width: 90%;
+    }
+    #seguidores{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        padding: 1%;
+        height: 15%;
+        width: 15%;
+    }
+    #grupoImg{
+        height: 20%;
+        width: 20%; 
+    }
+    #descripcion{
+        width: 90%;
+        margin-left: 1%;
+        margin-top: 2%;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

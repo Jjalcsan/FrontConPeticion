@@ -8,6 +8,7 @@ import { GruposComponent } from './grupos/grupos.component';
 import { AlbumesComponent } from './albumes/albumes.component';
 import { GrupoComponent } from './grupo/grupo.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -23,7 +24,9 @@ import { PerfilComponent } from './perfil/perfil.component';
     PerfilComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     InicioComponent,

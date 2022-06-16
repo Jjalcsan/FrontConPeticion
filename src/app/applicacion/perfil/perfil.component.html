@@ -1,8 +1,8 @@
 <div id="containerTopBar">
-  <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand"><p class="linkls" id="titulo">SocialNet</p></a>
+  <nav class="navbar navbar-expand-sm navbar-light">
+      <a class="navbar-brand" ><p class="linkls" id="titulo">SocialNet</p></a>
       <div class="" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav">
 
           <li class="nav-item active">
             <a class="nav-link" href="/inicio"><p class="linkls">Inicio</p></a>
@@ -41,29 +41,49 @@
         <input type="file" id="form2Example1" class="form-control"/>
         <label class="form-label" for="form2Example2">Foto de perfil</label>
 
-      <div class="form-outline mb-4" style="padding-top: 3vh;">
-        <input type="text" id="form2Example1" class="form-control" placeholder="jjalcsan" />
+      <div class="form-outline mb-4" style="padding-top: 3vh;" [formGroup]="angForm" novalidate>
+        <input type="text" id="form2Example1" class="form-control" placeholder="jjalcsan" formControlName="nick"/>
         <label class="form-label" for="form2Example1">Nick</label>
+        <div *ngIf="angForm.controls['nick'].invalid && (angForm.controls['nick'].dirty || angForm.controls['nick'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['nick'].errors?.['required']">
+          El nick es necesario.
+          </div>
       </div>
     
-      <div class="form-outline mb-4">
-        <input type="password" id="form2Example2" class="form-control"/>
+      <div class="form-outline mb-4" [formGroup]="angForm" novalidate>
+        <input type="password" id="form2Example2" class="form-control" formControlName="contra"/>
         <label class="form-label" for="form2Example2">Contraseña</label>
+        <div *ngIf="angForm.controls['contra'].invalid && (angForm.controls['contra'].dirty || angForm.controls['contra'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['contra'].errors?.['required']">
+          La contraseña es necesaria.
+          </div>
       </div>
 
       <div class="form-outline mb-4">
-        <input type="password" id="form2Example2" class="form-control" />
+        <input type="password" id="form2Example2" class="form-control" formControlName="contraAgain"/>
         <label class="form-label" for="form2Example2">Repite la contraseña</label>
+        <div *ngIf="angForm.controls['contraAgain'].invalid && (angForm.controls['contraAgain'].dirty || angForm.controls['contraAgain'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['contraAgain'].errors?.['required']">
+          Tienes que repetir la contraseña.
+          </div>
       </div>
 
       <div class="form-outline mb-4">
-        <input type="email" id="form2Example2" class="form-control" placeholder="jjalcsan@gmail.com"/>
+        <input type="email" id="form2Example2" class="form-control" placeholder="jjalcsan@gmail.com" formControlName="email"/>
         <label class="form-label" for="form2Example2">Email</label>
+        <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['email'].errors?.['required']">
+          El email es necesario.
+        </div>
       </div>
 
       <div class="form-outline mb-4">
-        <input type="text" id="form2Example2" class="form-control" placeholder="25"/>
+        <input type="text" id="form2Example2" class="form-control" placeholder="25" formControlName="edad"/>
         <label class="form-label" for="form2Example2">Edad</label>
+        <div *ngIf="angForm.controls['edad'].invalid && (angForm.controls['edad'].dirty || angForm.controls['edad'].touched)" class="alert alert-danger">
+          <div *ngIf="angForm.controls['edad'].errors?.['required']">
+          Tienes que ser mayor de 18.
+        </div>
       </div>
 
       <div class="form-outline mb-4">
@@ -71,7 +91,43 @@
         <label class="form-label" for="form2Example2">Teléfono</label>
       </div>
     
-      <button type="button" class="btn btn-block mb-4" (click)="navigateToInicio()">Guardar cambios</button>
-    </div>
+      <button type="button" class="btn btn-block mb-4" (click)="navigateToInicio()" [disabled]="angForm.pristine || angForm.invalid">Guardar cambios</button>
     </div>
   </div>
+  <div id="externo">
+    <div id="seguidores">
+        <h2>Seguidores</h2>
+        <div>
+            <abbr title="Ignasi Barea"><img src="../../../assets/img/user1.jpg" (click)="navigateToOtroUser()"></abbr>
+            <abbr title="Blanca Caceres"><img src="../../../assets/img/user2.jpg" (click)="navigateToOtroUser()"></abbr>
+            <abbr title="Maria Nieves Cabezas"><img src="../../../assets/img/user3.jpg" (click)="navigateToOtroUser()"></abbr>
+            <abbr title="Maria Angela Cubero"><img src="../../../assets/img/user4.jpg" (click)="navigateToOtroUser()"></abbr>
+            <abbr title="Marco Vicente"><img src="../../../assets/img/user5.jpg" (click)="navigateToOtroUser()"></abbr>
+            <abbr title="Celso Chaves"><img src="../../../assets/img/pfp.jpg" (click)="navigateToOtroUser()"></abbr>
+            <abbr title="Pilar Hinojosa"><img src="../../../assets/img/user6.jpg" (click)="navigateToOtroUser()"></abbr>
+            <abbr title="Vega Palomino"><img src="../../../assets/img/user7.jpg" (click)="navigateToOtroUser()"></abbr>
+            <abbr title="Nagore Cabanillas"><img src="../../../assets/img/user8.jpg" (click)="navigateToOtroUser()"></abbr>
+        </div><br>
+        <a class="mas" (click)="navigateToSeguidores()">Ver más...</a>
+
+    </div>
+    <div id="grupos">
+        <h2>Grupos</h2>
+        <div>
+            <abbr title="Travelling"><img src="../../../assets/img/group1.jpg" (click)="navigateToGrupo()"></abbr>
+            <abbr title="Gaming Needs"><img src="../../../assets/img/group2.jpg" (click)="navigateToGrupo()"></abbr>
+            <abbr title="TopCars"><img src="../../../assets/img/group3.jpg" (click)="navigateToGrupo()"></abbr>
+        </div><br>
+        <a class="mas" (click)="navigateToGrupos()">Ver más...</a>
+    </div>
+    <div id="albumes">
+        <h2>Albumes</h2>
+        <div>
+            <abbr title="Viaje a Sierra Nevada"><img src="../../../assets/img/sierraNevada.jpg" (click)="navigateToAlbum()"></abbr>
+            <abbr title="Islantilla"><img src="../../../assets/img/Islantilla.jpg" (click)="navigateToAlbum()"></abbr>
+            <abbr title="Fiesta"><img src="../../../assets/img/party.jpg" (click)="navigateToAlbum()"></abbr>
+        </div><br>
+        <a class="mas" (click)="navigateToAlbumes()">Ver más...</a>
+    </div>
+  </div>
+</div>

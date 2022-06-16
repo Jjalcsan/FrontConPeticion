@@ -114,3 +114,59 @@ img{
 #titulo{
     font-size: xx-large;
 }
+
+#perfilMovil{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+    #perfil{
+        visibility: hidden;
+        width: 0vw;
+    }
+    #externo{
+        visibility: hidden;
+        width: 0vw;
+    }
+    #posts{
+        width: 100%;
+        height: 100%;
+    }
+    #publishNew{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #new{
+        width: 90%;
+        height: 90%;
+        align-self: center;
+    }
+    .bnt{
+        width: 10%;
+        padding-left: 10%;
+    }
+    .post{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    #container{
+        height: 100%;
+        width: 100%;
+    }
+    button{
+        margin-top: 0.5vh;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    #perfilMovil{
+        visibility: visible;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
