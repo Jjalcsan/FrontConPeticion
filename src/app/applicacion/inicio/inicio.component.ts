@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Usuario } from 'src/app/services/usuario.interface';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-inicio',
@@ -8,9 +10,12 @@ import { Router } from '@angular/router';
 })
 export class InicioComponent implements OnInit {
 
-  constructor(public router : Router) { }
+  usuario!: Usuario;
+
+  constructor(public router : Router, private loginService : LoginService) { }
 
   ngOnInit(): void {
+    this.get()
   }
 
   navigateToOtroUser(){
@@ -39,6 +44,17 @@ export class InicioComponent implements OnInit {
 
   navigateToPerfil(){
     this.router.navigateByUrl("/inicio/perfil")
+  }
+  
+  get(){  
+    this.loginService.getUsuario().subscribe({
+        next: resp => { 
+          console.log(resp)
+        },
+        error: error =>{
+            alert("Ha ocurrido un error")
+          }
+    })
   }
 
 }
